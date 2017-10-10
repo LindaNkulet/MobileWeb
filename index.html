@@ -6,8 +6,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
-  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet"  href="css/materialize.min.css" />
+  <!--<link rel="stylesheet" href="css/jquery.mobile.theme.css" />-->
   
   <script>
     var userAgent = navigator.userAgent + '';
@@ -26,42 +26,78 @@
   <!-- your scripts here -->
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
+  <script src="js/materialize.min.js"></script>
   
   </head>
   <body>
     
-    <div data-role="page">
+     <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Ashesi University College</a>
 
-    	<div data-role="header">
-    		<!--<h1>Single page</h1>-->
-        <h1>Ashesi University College</h1>
-    	</div><!-- /header -->
+      
+  </nav>
 
-    	<div data-role="content">
-      <p>Welcome to the official website of Ashesi University College.Ashesi University is a private,non-profit,liberal arts college in Ghana,West Africa.It was established in 2002 by Patrick Awuah Jr.</p>
-      <p>It offers a four-year bachelors programme featuring the following majors.
-      <li> Business Administration</li>
-      <li>Computer Science</li>
-      <li> Management Information Systems</li>
-      <li>Electrical and Electronic Engineering </li>
-      <li>Mechanical Engineering</li>
-       <li>Computer Engineering Engineering</li>
-      </p>	
-    		<!--<p>This is a single page boilerplate template that you can copy to build your first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>
-    		<p>This template is standard HTML document with a single "page"</p>-->
-    	</div><!-- /content -->
+  <!--<ul id="slide-out" class="side-nav ">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>-->
 
-    	<div data-role="footer">
-    		<!--<h4>Footer content</h4>-->
-        <h4>FIND US</h4>
-        <p>Ashesi University College</p>
-        <p>1 University Avenue,Berekuso,Eastern Region.</p>
-        <p>PMB CT3 Cantonments,</p>
-        <p>Accra,Ghana.</p>
-    	</div><!-- /footer -->
+   <div class ="BApage">
+   <p class="black-text text-lighten-4">Welcome to the official website of Ashesi University College.Ashesi University is a private,non-profit,liberal arts college in Ghana,West Africa.It was established in 2002 by Patrick Awuah Jr.</p>
+   <p class="black-text text-lighten-4">It offers a four-year bachelors programme featuring the following majors.</p>
+  </div>
 
-    </div><!-- /page -->
-    
+  <div class ="cspage">
+<a class="waves-effect waves-light btn">Computer Science</a>
+  </div>
+
+  <div class ="BApage">
+  </div>
+
+  <div class ="MISpage">
+  </div>
+
+  <div class ="Engpage">
+  <p class="black-text text-lighten-4">COMPUTER SCIENCE</p>
+  </div>
+
+
+
+
+  
+        
+
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">FIND US</h5>
+                <p class="grey-text text-lighten-4">1 University Avenue,Berekuso;</p>
+                <p class="grey-text text-lighten-4">PMB CT3 Cantonments, Accra, Ghana </p>
+                <p class="grey-text text-lighten-4">Phone: +233.302.610.330  | Email: info@ashesi.edu.gh</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            ©Ashesi University College. All rights reserved.
+            </div>
+          </div>
+        </footer>       
   </body>
 </html>

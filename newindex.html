@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet"  href="css/materialize.min.css" />
+  <!--<link rel="stylesheet" href="css/jquery.mobile.theme.css" />-->
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/bootstrap.js"></script>
+  <script src="js/materialize.js"></script>
+
+  
+  </head>
+  <body>
+
+
+    
+     <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background teal">
+        
+      </div>
+      <a href="#!user"><img class="circle" src="images/profile.jpg"></a>
+      <a href="#!name"><span class="white-text name">Linda Delishoi</span></a>
+      <a href="#!email"><span class="white-text email">lindadelishoi@gmail.com</span></a>
+    </div></li>
+    <li><a class="subheader">Calendar</a></li>
+    <li><a a href="#">Events Calendar</a></li>
+    <li><a href="#">School Calendar</a></li>
+  </ul>
+
+
+
+    <nav>
+    <div class="nav-wrapper">
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">Ashesi University College</a>
+    </div>
+  </nav>
+
+  
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption center-align">
+          <h5 class="light grey-text text-lighten-3">Beautiful sunset at Atlantic sea as seen from Ashesi.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h5 class="light grey-text text-lighten-3">Beautiful sunset at Atlantic sea as seen from Ashesi</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+      
+
+  <div class ="intro">
+   <p class="black-text text-lighten-4">Welcome to the official website of Ashesi University College.Ashesi University is a private,non-profit,liberal arts college in Ghana,West Africa.It was established in 2002 by Patrick Awuah Jr.</p>
+   <p class="black-text text-lighten-4">It offers a four-year bachelors programme featuring the following majors.</p>
+  </div>
+
+  <ul id="majors" class="major-links">
+  <li><a href="BA.html">Business Administration</a></li>
+  <li><a href="cs.html">Computer Science</a></li>
+  <li><a href="MIS.html">Management Info Systems</a></li>
+  <li><a href="Engineering.html">Engineering</a></li>
+
+  </ul>
+
+  <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">FIND US</h5>
+                <p class="grey-text text-lighten-4">1 University Avenue,Berekuso;</p>
+                <p class="grey-text text-lighten-4">PMB CT3 Cantonments, Accra, Ghana </p>
+                <p class="grey-text text-lighten-4">Phone: +233.302.610.330  | Email: info@ashesi.edu.gh</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            ©Ashesi University College. All rights reserved.
+            </div>
+          </div>
+        </footer>       
+
+
+
+
+
+  
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+     
+    }
+  );
+        
+        });
+        	 
+        </script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+      $('.slider').slider({height: 235});
+
+    });
+        
+        </script>
+  </body>
+</html>
